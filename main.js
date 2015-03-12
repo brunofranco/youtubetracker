@@ -2,7 +2,7 @@
   {
   	var url = changeInfo.url;
 	var path = chrome.runtime.getURL("/icon.png");
-	if (url.indexOf("youtube") != -1) {
+	if (url.indexOf("www.youtube.com/watch") != -1) {
 		if (localStorage.getItem(url) == null) {
 			localStorage[url] = true
 		} else {
